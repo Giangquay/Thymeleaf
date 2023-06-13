@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en" xmlns:th="https://www.thymeleaf.org"> 
+<head> 
+	<title>Index</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link th:href="@{CSS/bootstrap.min.css}" rel="stylesheet">
+	<link th:href="@{CSS/cover.css}" rel="stylesheet">
+</head> 
+<body> 
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+	<header th:replace="commomcomponent :: header"></header>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">User Infor.</h1>
+        <p class="lead">Main message for User</p>
+        <p class="lead">
+          <a href="https://getbootstrap.com/docs/4.0/examples/cover/#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+      </main>
+
+	<footer th:replace="commomcomponent :: footer"></footer>
+    </div>
+    
+    
+    <script th:src="@{JS/boostrap.min.js}"></script>
+     <script th:src="@{JS/jquery-3.2.1.slim.min.js}"></script>
+      <script th:src="@{JS/popper.min.js}"></script>
+    </body>
+</html>

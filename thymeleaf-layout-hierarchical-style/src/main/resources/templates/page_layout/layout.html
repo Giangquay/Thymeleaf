@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.1/examples/cover/ -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.1/assets/img/favicons/favicon.ico">
+
+   <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">My content page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link  th:href="@{/CSS/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/CSS/cover.css}" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto" th:replace="page_layout/header :: header">
+        <div class="inner">
+            <h3 class="masthead-brand">Header</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="https://getbootstrap.com/docs/4.1/examples/cover/#">Tab1</a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/4.1/examples/cover/#">Tab2</a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/4.1/examples/cover/#">Tab3</a>
+            </nav>
+        </div> 
+    </header>
+
+    <main role="main" class="inner cover" layout:fragment="main-content">
+       <h1>This main content will be decorated by the actual page returned in the controller methods.</h1>
+    </main>
+
+    <footer class="mastfoot mt-auto footer1" th:replace="page_layout/footer :: footer">
+        <p>Static Footer template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        
+    </footer>
+</div>
+
+
+</body></html>
